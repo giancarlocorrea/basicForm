@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Formulário de Cadastro</h2>
+      </div>
+      <form class="formDados" id="formDados">
+        <div class="campos">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" placeholder="Digite seu nome" />
+          <i class="fas fa-exclamation-triangle"></i>
+          <i class="fas fa-check"></i>
+          <small>Digite seu nome completo</small>
+        </div>
+        <div class="campos">
+          <label for="address">Endereço:</label>
+          <input type="text" id="address" placeholder="Digite seu endereço" />
+          <i class="fas fa-exclamation-triangle"></i>
+          <i class="fas fa-check"></i>
+          <small>Digite seu endereço</small>
+        </div>
+        <div class="campos">
+          <label for="city">Cidade:</label>
+          <input type="text" id="city" placeholder="Digite a cidade" />
+          <i class="fas fa-exclamation-triangle"></i>
+          <i class="fas fa-check"></i>
+          <small>Digite a cidade</small>
+        </div>
+        <div class="campos">
+          <label for="district">Bairro:</label>
+          <input type="text" id="district" placeholder="Digite seu bairro" />
+          <i class="fas fa-exclamation-triangle"></i>
+          <i class="fas fa-check"></i>
+          <small>Digite o bairro</small>
+        </div>
+        <div class="campos">
+          <label for="state">Estado:</label>
+          <select name="state" id="state" form="formDados">
+            <option value="" disabled selected>Selecione...</option>
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+          </select>
+          <i class="fas fa-exclamation-triangle"></i>
+          <i class="fas fa-check"></i>
+          <small>Selecione o estado</small>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/0e66b05954.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
